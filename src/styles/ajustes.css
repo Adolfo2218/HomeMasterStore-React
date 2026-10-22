@@ -1,0 +1,36 @@
+.hm-tabs button{border:0;background:transparent;color:inherit;font:inherit;cursor:pointer;padding:0}
+.product-item .hm-btn{border:0;cursor:pointer;display:inline-block;text-align:center}
+.carrito-react{padding-top:145px;padding-bottom:70px;min-height:65vh}
+.carrito-react .producto-carrito{display:flex;align-items:center;gap:24px;padding:12px 0;border-bottom:1px solid #ddd}
+.carrito-react .imagen-producto-carrito{width:85px;height:85px;object-fit:cover}
+.carrito-react .btn-eliminar{padding:8px 16px;border:0;background:#b32929;color:white;border-radius:4px;cursor:pointer}
+.carrito-react #listaCarrito{list-style:none;padding:0}
+.legacy-content .hm-header{z-index:20}
+@media(max-width:600px){.carrito-react .producto-carrito{flex-wrap:wrap}.carrito-react{padding-top:100px}}
+/* Pantallas React: no dependen de convertir HTML antiguo en componentes */
+.pagina-react{min-height:55vh;padding-top:95px}
+.portada-react{min-height:365px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(20,40,23,.80),rgba(20,40,23,.22)),url('/img/img-banner-try-1.jpg') center/cover;color:#fff}
+.portada-contenido h1{color:#fff;font-size:clamp(2rem,5vw,4rem);font-weight:750}
+.portada-contenido p{font-size:1.2rem;color:#fff}
+.seccion-react{padding-top:55px;padding-bottom:55px}
+.seccion-react>h1,.seccion-react>h2{margin-bottom:22px}
+.categorias-react{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}
+.footer-react{background:#203b2a;color:#fff;padding:34px 0}
+.footer-react a{color:#fff;margin-right:20px}
+.imagen-pagina{max-width:100%;max-height:440px;object-fit:cover;border-radius:10px;margin:20px 0}
+.formulario-react{max-width:800px}
+.formulario-react form{display:grid;gap:18px}
+.formulario-react label{display:grid;gap:6px}
+.blog-grid-react{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.blog-card-react{border:1px solid #ddd;border-radius:9px;overflow:hidden;padding-bottom:20px}
+.blog-card-react img{width:100%;height:190px;object-fit:cover}
+.blog-card-react h2{font-size:1.2rem;margin:18px}
+.blog-card-react a{margin:18px}
+.hm-header{z-index:100!important}
+.carrito-react{padding-top:145px}
+@media(max-width:767px){.pagina-react{padding-top:75px}.seccion-react{padding-top:30px;padding-bottom:30px}}
+
+/* Estados visibles de inicio y cierre de sesión, escritorio y móvil */
+.hm-menu .nombre-usuario,.header-menu-movil .nombre-usuario{display:inline-block;color:#245334;font-weight:600;padding:6px 8px;}
+.hm-menu .boton-salir,.header-menu-movil .boton-salir{background:none;border:0;cursor:pointer;text-decoration:underline;color:#274634;font:inherit;padding:6px 8px;}
+.header-menu-movil .nombre-usuario,.header-menu-movil .boton-salir{color:#23402d;}
