@@ -32,3 +32,19 @@ npm run build
 ## GitHub
 
 El `.gitignore` excluye `node_modules`, `dist` y archivos locales. Ejecutar `npm run build` antes de publicar. No publicar cuentas reales ni datos sensibles.
+
+## Pruebas unitarias (Jasmine + Karma)
+
+Se incluyen 65 casos distribuidos en cinco especificaciones de `src/tests`.
+Tras instalar dependencias con `npm install`, usa `npm test` para ejecutarlos.
+Karma está configurado inicialmente para ChromeHeadless. En Windows con Edge Chromium,
+puedes usar en CMD `set "CHROME_BIN=C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"`
+(si tu Edge está instalado ahí) antes de `npm test`.
+
+Para obtener un informe de cobertura instala las dependencias adicionales:
+`npm install --save-dev karma-coverage babel-plugin-istanbul`
+y ejecuta `npx karma start karma.coverage.conf.cjs --single-run`.
+El informe HTML se encuentra en `coverage/html/index.html`.
+Las pruebas asíncronas usan Web Crypto; se requiere un navegador moderno.
+**No se ha confirmado en este entorno que los 65 casos terminen exitosamente:**
+comprueba y corrige los resultados en tu máquina antes de reportarlos.
