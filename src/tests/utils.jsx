@@ -3,7 +3,9 @@ import {createRoot} from 'react-dom/client';
 import {act} from 'react';
 import {MemoryRouter} from 'react-router-dom';
 import {AuthProvider} from '../context/AuthContext.jsx';
+export {apiMock,adminApi,clienteApi} from './apiMock.js';
 import {CarritoProvider} from '../context/CarritoContext.jsx';
+globalThis.IS_REACT_ACT_ENVIRONMENT = true;
 export async function montar(element,{auth=true,cart=true,router=true}={}) {
  const container=document.createElement('div');document.body.appendChild(container);
  const root=createRoot(container);
