@@ -37,6 +37,7 @@ export function Usuarios() {
   );
   return <main className="container py-5">
     <h1>Administración de usuarios</h1>
+    <p><Link to="/admin/productos" className="btn btn-outline-primary">Administrar productos</Link></p>
     <p className="text-muted">Usuarios registrados en Spring Boot y H2. Deshabilitar una cuenta evita que vuelva a autenticarse sin borrar su historial.</p>
     <p><Link to="/nuevou" className="btn btn-success">Crear usuario</Link>{' '}<Link to="/">Volver a la tienda</Link></p>
     {error && <div className="alert alert-danger" role="alert">{error}</div>}

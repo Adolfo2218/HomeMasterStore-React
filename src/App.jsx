@@ -11,6 +11,7 @@ import Nosotros from './pages/Nosotros.jsx';
 import Contacto from './pages/Contacto.jsx';
 import {Blog,Articulo} from './pages/Blog.jsx';
 import {Usuarios,NuevoUsuario} from './pages/Usuarios.jsx';
+import AdministrarProductos from './pages/AdministrarProductos.jsx';
 import {Login} from './pages/Login.jsx';
 import {Registro} from './pages/Registro.jsx';
 import './styles/ajustes.css';
@@ -22,6 +23,7 @@ export default function App(){return <AuthProvider><CarritoProvider><ProductosPr
 <Route path="/login" element={<Layout><Login/></Layout>}/><Route path="/registrar" element={<Layout><Registro/></Layout>}/>
 <Route path="/usuarios" element={<SoloAdministrador><Layout><Usuarios/></Layout></SoloAdministrador>}/>
 <Route path="/nuevou" element={<SoloAdministrador><Layout><NuevoUsuario/></Layout></SoloAdministrador>}/>
+<Route path="/admin/productos" element={<SoloAdministrador><Layout><AdministrarProductos/></Layout></SoloAdministrador>}/>
 <Route path="/nosotros" element={<Nosotros/>}/><Route path="/contacto" element={<Contacto/>}/>
 <Route path="/blog" element={<Blog/>}/><Route path="/blogs/:slug" element={<Articulo/>}/>
 <Route path="*" element={<Desconocida/>}/></Routes></ProductosProvider></CarritoProvider></AuthProvider>}
